@@ -1,5 +1,5 @@
 # BER vs SNR Simulations with Forward Error Correction
-This repository contains **MATLAB** scripts for simulating FEC codes. The scripts were intended to provide results to be analysed for a Master's Thesis on the performance of **Forward Error Correction codes** in aircrafts.
+This repository contains **MATLAB** scripts for simulating **Forward Error Correction (FEC)** codes. The scripts were intended to provide results to be analysed for a Master's Thesis on the performance of **FEC codes** in aircrafts.
 
 ## FEC codes
 The following FEC codes are supported:
