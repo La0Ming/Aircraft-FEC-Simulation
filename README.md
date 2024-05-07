@@ -1,5 +1,5 @@
 # BER vs SNR Simulations with Forward Error Correction
-This repository contains **MATLAB** scripts for simulating **Forward Error Correction (FEC)** codes. The scripts were intended to provide results to be analysed for a Master's Thesis on the performance of **FEC codes** in aircrafts.
+This repository contains MATLAB scripts for simulating the BER performance of **Forward Error Correction (FEC)** codes. The scripts were intended to provide results to be analysed for a Master's Thesis on the performance of **FEC codes** in aircrafts.
 
 ## FEC codes
 The following FEC codes are supported:
@@ -17,6 +17,9 @@ The following FEC codes are supported:
 
 ## Modulation techniques
 Currently, only PSK is supported.
+
+## Channel models
+Both AWGN and Rician fading can be used in the simulations. The Rician K-factor can be edited in each fading script to vary the severity of the simulated fading.
 
 ## File structure
 Each folder is for a certain channel model with a certain block length. For example, if you want to simulate codes with block length 15 in AWGN, simply navigate to awgn_psk_n15 and you'll find simulation scripts for each FEC code. There are also scripts for plotting in each folder, where workspaces need to be saved in .mat file in order for them to work. Edit the plot scripts in accordance to the names of the .mat files if you want to use these scripts.
