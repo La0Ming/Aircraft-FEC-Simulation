@@ -29,9 +29,9 @@ for i = 1:length(kRange)
         rxSigMod1 = awgn(fadedSignal1, snr); % Add noise
         rxSigDemod1 = pskdemod(rxSigMod1, modOrder, ...
             OutputType='bit'); % Demodulate the signal
-        errStats1 = errorRateCalculator1(data1, rxSigDemod1); % Calculate error rate
+        errorStats1 = errorRateCalculator1(data1, rxSigDemod1); % Calculate error rate
     end
-    berUncodedFaded(i) = errStats1(1); % Store BER
+    berUncodedFaded(i) = errorStats1(1); % Store BER
 end
 
 % Plot
